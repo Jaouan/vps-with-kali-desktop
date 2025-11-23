@@ -2,7 +2,7 @@
 set -e
 
 # Get newer keyring from https://kali.download/kali/pool/main/k/kali-archive-keyring/
-export KALI_KEYRING=https://kali.download/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2024.1_all.deb
+export KALI_KEYRING=https://kali.download/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2025.1_all.deb
 export DEBIAN_FRONTEND=noninteractive
 
 # Check if running as root
