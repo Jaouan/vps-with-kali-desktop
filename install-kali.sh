@@ -22,8 +22,11 @@ apt upgrade -yq
 apt install -yq kali-defaults
 
 # Enable remote desktop
-apt install -yq kali-desktop-xfce tightvncserver xrdp
+apt install -yq kali-desktop-xfce tightvncserver xrdp=0.10.1-3.1 xorgxrdp=1:0.10.2-1
 systemctl restart xrdp
+
+# Ensure Kali packages stay low priority to avoid mixing Debian/Kali versions
+echo -e "Package: *\nPin: origin kali.download\nPin-Priority: 50" | sudo tee /etc/apt/preferences.d/kali
 
 # Refresh profile
 source ~/.bashrc

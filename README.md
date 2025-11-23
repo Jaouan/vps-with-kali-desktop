@@ -8,7 +8,7 @@ It is important to note that while XRDP provides remote desktop access, addition
 
 ## One-line installation
   
-> Tested on OVH VPS with Debian 12.
+> Tested on OVH VPS with Debian 13.
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/Jaouan/vps-with-kali-desktop/refs/heads/main/install-kali.sh | bash
